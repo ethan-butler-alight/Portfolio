@@ -1,0 +1,91 @@
+@import 'typography';
+@import 'colors';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: $primary-color;
+    color: #fff;
+
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding: 5vh 5vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    
+    .logotype {
+        margin-right: auto;
+    }
+
+    ul {
+        display: flex;
+
+
+        li {
+            padding: 0 2em;
+        }
+        
+    }
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    
+
+    p {
+        text-align: left;
+    }
+    
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    mix-blend-mode: overlay;
+}
+
+
+.two-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.monitor {
+    width: 100%;    
+}
+
+@import 'responsive';
