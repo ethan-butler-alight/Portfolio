@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,700&family=Urbanist:wght@400;500;600;700&display=swap");
+/* Body Text */
+* {
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav Text */
+nav .logotype {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 44px;
+}
+
+nav a {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+/* Header Text */
+h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 200%;
+  /* or 96px */
+  text-align: center;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 200%;
+  text-align: center;
+}
+
+/* Text Properties */
+.text-shadow {
+  text-shadow: 0px 4px 20px #000000;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #5236FF;
+  color: #fff;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  padding: 5vh 5vw;
+}
+
+.cards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-text {
+  color: #003;
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav .logotype {
+  margin-right: auto;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 2em;
+}
