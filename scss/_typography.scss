@@ -8,15 +8,13 @@ $secondary-font: Montserrat, sans-serif;
 
 /* Body Text */
 * {
-    font-family: Urbanist;
+    font-family: $primary-font;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 36px;
-    line-height: 150%;    
     letter-spacing: 0.04em;
     color: #fff;
     text-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
-
 }
 
 
@@ -24,22 +22,18 @@ $secondary-font: Montserrat, sans-serif;
 
 nav {
 
+    font-family: $secondary-font;
+
     .logotype {
-        font-family: Montserrat;
         font-style: italic;
-        font-weight: bold;
-        line-height: 44px;
+        font-weight: 700;
     }
 
 
 
-
-
     a {
-        font-family: Montserrat;
         font-weight: 600;
         font-size: 24px;
-        line-height: 29px;
     }
 }
 
@@ -50,6 +44,7 @@ h1 {
     font-weight: bold;
     font-size: 48px;
     line-height: 200%;
+
     /* or 96px */
     text-align: center;
 }
@@ -64,6 +59,16 @@ h2 {
 }
 
 /* Text Properties */
+.primary-color {
+    color: $primary-color;
+}
+.secondary-color {
+    color: $secondary-color;
+}
+.tertiary-color {
+    color: $tertiary-color;
+}
+
 .text-shadow {
     text-shadow: 0px 4px 20px #000000;
 }
@@ -71,4 +76,48 @@ h2 {
 .bold-text {
  font-weight: bold;   
 }
+
+.underline-text {
+    text-decoration: underline;
+}
+
+/* Card Properties */
+
+.card-text {
+    font-weight: 600;
+
+    p {
+        font-weight: 400;
+        color: #000;
+    }
+}
+
+
+.card-title {
+    font-weight: 600;
+    color: #000;
+}
+
+.card-type {
+    font-weight: 600;
+    color: $primary-color;
+
+}
+
+.button {
+    span {
+        font-weight: 600;
+    }
+}
+
+.code-button {
+    background-color: $tertiary-color;
+
+}
+
+.demo-button {
+    background-color: $secondary-color;
+
+}
+
 
