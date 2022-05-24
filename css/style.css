@@ -74,7 +74,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Card Properties */
+/* Card Text */
 .card-text {
   font-weight: 600;
 }
@@ -106,6 +106,19 @@ h2 {
   background-color: #F63;
 }
 
+/* Contact Text */
+.contact-type {
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
+
+.contact-info {
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -135,12 +148,36 @@ header {
   padding: 50px 88px 0;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav .logotype {
+  margin-right: auto;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 2em;
+}
+
 main {
   /* Center everything in main vertically */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+  padding: 0 6.67vw;
+}
+
+/* About Page */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* Cards */
@@ -157,6 +194,10 @@ main {
   font-size: 18px;
   width: fit-content;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card:hover {
+  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.55));
 }
 
 .card-image {
@@ -222,19 +263,18 @@ main {
   border-radius: 0 0 8px 0;
 }
 
-nav {
-  display: flex;
-  align-items: center;
+/* Contact Page */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-nav .logotype {
-  margin-right: auto;
+.contact-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }
 
-nav ul {
-  display: flex;
-}
-
-nav ul li {
-  padding: 0 2em;
+.contact-type, .contact-info {
+  justify-self: left;
 }

@@ -1,6 +1,8 @@
 @import 'typography';
 @import 'colors';
 
+/* Global Styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,6 +33,23 @@ header {
     padding: 50px 88px 0;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    
+    .logotype {
+        margin-right: auto;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            padding: 0 2em;
+        }
+        
+    }
+}
 
 
 main {
@@ -38,13 +57,19 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+
     width: 100%;
+    padding: 0 6.67vw;
+}
+
+/* About Page */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 
 /* Cards */
-
-
 .cards-container {
     width: 100%;
     height: 100%;
@@ -61,6 +86,10 @@ main {
     width: fit-content;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
+}
+
+.card:hover {
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.55));
 }
 
 .card-image {
@@ -141,29 +170,33 @@ main {
 
 }
 
-
-
 .icon {
 
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    
-    .logotype {
-        margin-right: auto;
-    }
-
-    ul {
-        display: flex;
-
-        li {
-            padding: 0 2em;
-        }
-        
-    }
+/* Contact Page */
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
+
+.contact-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.contact-type, .contact-info {
+    justify-self: left;
+    
+}
+
+.contact-image {
+
+
+}
+
+
 
 
 @import 'responsive';
