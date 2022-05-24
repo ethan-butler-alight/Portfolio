@@ -10,6 +10,10 @@
   text-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
 }
 
+p {
+  line-height: 150%;
+}
+
 /* Nav Text */
 nav {
   font-family: Montserrat, sans-serif;
@@ -131,11 +135,12 @@ header {
   padding: 50px 88px 0;
 }
 
-.home {
-  /* Not perfectly vertically centered. May adjust in the future */
-  position: relative;
+main {
+  /* Center everything in main vertically */
+  position: absolute;
   top: 50%;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
+  width: 100%;
 }
 
 /* Cards */
@@ -159,6 +164,7 @@ header {
   display: block;
 }
 
+/* Unsure if spacing is perfect on text in cards. May fix later */
 .card-text {
   background-color: #fff;
   padding: 16px 24px;

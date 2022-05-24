@@ -33,12 +33,12 @@ header {
 
 
 
-.home {
-
-    /* Not perfectly vertically centered. May adjust in the future */
-    position: relative;
+main {
+    /* Center everything in main vertically */
+    position: absolute;
     top: 50%;
-    transform: translateY(-60%);
+    transform: translateY(-50%);
+    width: 100%;
 }
 
 
@@ -68,6 +68,8 @@ header {
     display: block;
 }
 
+
+/* Unsure if spacing is perfect on text in cards. May fix later */
 .card-text {
 
     background-color: #fff; 
