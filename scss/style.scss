@@ -194,6 +194,36 @@ main {
     
 }
 
+/* Blog Page */
+
+.blog-header {
+    display: flex;
+    padding: 0 0 8px 0;
+}
+
+.blog-info {
+    background: $tertiary-color;
+    border-radius: 8px;
+    height: fit-content;
+    padding: 30px 24px; 
+}
+
+.blog-posts {
+    display: grid;
+}
+
+.blog-post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog-info {
+    display: grid;
+}
+
+
+
+
 
 
 

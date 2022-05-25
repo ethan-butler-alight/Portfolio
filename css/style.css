@@ -74,7 +74,8 @@ h2 {
   text-decoration: underline;
 }
 
-/* Card Text */
+/* Projects Page*/
+/* Cards */
 .card-text {
   font-weight: 600;
 }
@@ -106,7 +107,7 @@ h2 {
   background-color: #F63;
 }
 
-/* Contact Text */
+/* Contact Page*/
 .contact-type {
   font-weight: 700;
   line-height: 150%;
@@ -116,6 +117,22 @@ h2 {
 .contact-info {
   font-weight: 400;
   line-height: 150%;
+}
+
+/* Blog Page */
+/* Check why selecting with .blog-title works but .blog-header doesn't */
+.blog-title, .blog-date, .blog-category {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.blog-date {
+  color: #F63;
+}
+
+.blog-description {
+  font-weight: 500;
+  font-size: 24px;
 }
 
 /* Global Styles */
@@ -279,4 +296,30 @@ main {
 
 .contact-type, .contact-info {
   justify-self: left;
+}
+
+/* Blog Page */
+.blog-header {
+  display: flex;
+  padding: 0 0 8px 0;
+}
+
+.blog-info {
+  background: #003;
+  border-radius: 8px;
+  height: fit-content;
+  padding: 30px 24px;
+}
+
+.blog-posts {
+  display: grid;
+}
+
+.blog-post {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.blog-info {
+  display: grid;
 }
