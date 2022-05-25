@@ -267,12 +267,14 @@ main {
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
 }
 
 .contact-text {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  grid-template-columns: repeat(1, 1fr 2fr);
+  grid-template-rows: repeat(1, auto);
 }
 
 .contact-type, .contact-info {
