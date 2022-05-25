@@ -84,8 +84,8 @@ h2 {
     text-decoration: underline;
 }
 
-/* Card Text */
-
+/* Projects Page*/
+/* Cards */
 .card-text {
     font-weight: 600;
 
@@ -123,7 +123,7 @@ h2 {
 
 }
 
-/* Contact Text */
+/* Contact Page*/
 
 .contact-type {
     font-weight: 700;
@@ -136,4 +136,24 @@ h2 {
     line-height: 150%;
 
 }
+
+/* Blog Page */
+/* Check why selecting with .blog-title works but .blog-header doesn't */
+
+.blog-title, .blog-date, .blog-category {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.blog-date {
+    color: $secondary-color;
+}
+
+.blog-description {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+
 
