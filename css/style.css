@@ -43,8 +43,6 @@ h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
-  line-height: 200%;
-  /* or 96px */
   text-align: center;
 }
 
@@ -53,7 +51,6 @@ h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
-  line-height: 200%;
   text-align: center;
 }
 
@@ -220,6 +217,31 @@ main {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: #003;
+}
+
+/* Home Page */
+.home {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 45px;
 }
 
 /* About Page */

@@ -44,6 +44,7 @@ nav {
         font-weight: 600;
         font-family: $secondary-font;
         color: $tertiary-color;
+
     }
 }
 
@@ -53,9 +54,6 @@ h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
-    line-height: 200%;
-
-    /* or 96px */
     text-align: center;
 }
 
@@ -64,7 +62,6 @@ h2 {
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
-    line-height: 200%;    
     text-align: center;
 }
 
