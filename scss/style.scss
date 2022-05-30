@@ -102,7 +102,25 @@ footer {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background: $tertiary-color;
+    background: $off-white;
+    padding: 0 100px 0;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.footer-right {
+    display: flex;
+    column-gap: 63px;
+}
+
+.footer-sitemap, .footer-socials {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
 
@@ -111,13 +129,14 @@ footer {
 .home {
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 50px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    column-gap: 45px;
+    column-gap: 90px;
+    
 }
 
 
