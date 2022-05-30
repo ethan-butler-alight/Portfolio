@@ -16,10 +16,7 @@ $secondary-font: Montserrat, sans-serif;
     color: #fff;
     text-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
 }
-z
-p {
-    line-height: 150%;
-}
+
 
 /* Nav Text */
 
@@ -109,6 +106,12 @@ h2 {
 .underline-text {
     text-decoration: underline;
 }
+
+/* About Page */
+.about-text {
+    line-height: 150%;
+}
+
 
 /* Projects Page*/
 /* Cards */

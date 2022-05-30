@@ -10,11 +10,6 @@
   text-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
 }
 
-z
-p {
-  line-height: 150%;
-}
-
 /* Nav Text */
 nav {
   font-family: Montserrat, sans-serif;
@@ -99,6 +94,11 @@ h2 {
 
 .underline-text {
   text-decoration: underline;
+}
+
+/* About Page */
+.about-text {
+  line-height: 150%;
 }
 
 /* Projects Page*/
@@ -287,7 +287,7 @@ footer {
 /* About Page */
 .about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr 1fr);
 }
 
 /* Cards */
