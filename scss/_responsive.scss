@@ -1,0 +1,50 @@
+// Large Screen
+@media screen and (min-width: 1007px) {
+
+}
+
+
+
+// Medium Screen
+
+@media screen and (max-width: 1007px) {
+
+}
+
+// Small Screen
+@media screen and (max-width: 640px) {
+
+    header {
+        padding: 0;
+
+        nav {
+            background: $dark-blue;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+    
+            .hamburger-menu {
+                display: inline-block;
+            }
+    
+            .logotype {
+                display: inline-block;
+
+            }
+    
+            ul {
+                display: none;
+            }
+        
+        }
+    
+    }
+
+
+
+    footer {
+        display: none;
+    }
+
+}
