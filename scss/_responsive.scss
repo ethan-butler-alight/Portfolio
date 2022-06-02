@@ -1,15 +1,14 @@
+@import url(/node_modules/include-media/dist/_include-media.scss);
+
 // Large Screen
-@media screen and (min-width: 1007px) {
+@media screen and (min-width: 1008px) {
 
 }
 
 
 
 // Medium Screen
-
-@media screen and (max-width: 1007px) {
-
-
+@media screen and (min-width: 641px) and (max-width: 1007px) {
 
 }
 
@@ -30,6 +29,7 @@
             
             
             #hamburger-button {
+                display: inline-block;
                 padding: 0 0 0 20px;
                 width: 44px;
                 height: 44px;
