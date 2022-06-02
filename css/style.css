@@ -211,18 +211,18 @@ header nav .logotype {
   margin-right: auto;
 }
 
-header nav ul {
+header nav .nav-links {
   display: flex;
   justify-content: space-around;
   width: 60vw;
 }
 
-header nav ul li {
+header nav .nav-links li {
   display: flex;
   align-items: center;
 }
 
-header nav ul .cta {
+header nav .nav-links .cta {
   background-color: #F63;
   border-radius: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -415,18 +415,33 @@ footer {
   }
   header nav {
     background: #2B2942;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+  }
+  header nav .nav-links {
+    display: none;
+  }
+  header nav #hamburger-button {
+    padding: 0 0 0 20px;
+    width: 44px;
+    height: 44px;
+    border: solid #fff;
+    background: none;
   }
   header nav .hamburger-menu {
     display: inline-block;
   }
-  header nav .logotype {
-    display: inline-block;
+  header nav .hamburger-menu:active .nav-links {
+    display: flex;
   }
-  header nav ul {
-    display: none;
+  header nav .logotype {
+    padding: 0 20px 0 0;
+    font-size: 24px;
+  }
+  .social-icons {
+    column-gap: 50px;
+  }
+  .social-icons a svg {
+    transform: scale(0.75);
   }
   footer {
     display: none;

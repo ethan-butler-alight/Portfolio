@@ -9,6 +9,8 @@
 
 @media screen and (max-width: 1007px) {
 
+
+
 }
 
 // Small Screen
@@ -17,29 +19,56 @@
     header {
         padding: 0;
 
+
         nav {
             background: $dark-blue;
+            justify-content: space-between;
 
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-    
+            .nav-links {
+                display: none;
+            }
+            
+            
+            #hamburger-button {
+                padding: 0 0 0 20px;
+                width: 44px;
+                height: 44px;
+                border: solid #fff; // Change, just here for debugging
+                background: none;
+
+            }
+
             .hamburger-menu {
                 display: inline-block;
             }
-    
-            .logotype {
-                display: inline-block;
 
+            .hamburger-menu:active {
+
+                .nav-links {
+                    display: flex;
+                }
+
+                
             }
     
-            ul {
-                display: none;
+            .logotype {
+                padding: 0 20px 0 0;
+                font-size: 24px;
             }
         
         }
     
     }
+
+    .social-icons {
+
+        column-gap: 50px;
+    
+        a svg{
+            transform: scale(0.75);
+        }
+    }
+
 
 
 
