@@ -1,5 +1,3 @@
-@import url(/node_modules/include-media/dist/_include-media.scss);
-
 // Large Screen
 @media screen and (min-width: 1008px) {
 
@@ -29,27 +27,15 @@
             
             
             #hamburger-button {
-                display: inline-block;
-                padding: 0 0 0 20px;
+                display: flex;
                 width: 44px;
                 height: 44px;
-                border: solid #fff; // Change, just here for debugging
+                border: none;
                 background: none;
-
+                justify-content: center;
+                align-items: center;
             }
 
-            .hamburger-menu {
-                display: inline-block;
-            }
-
-            .hamburger-menu:active {
-
-                .nav-links {
-                    display: flex;
-                }
-
-                
-            }
     
             .logotype {
                 padding: 0 20px 0 0;
