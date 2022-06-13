@@ -199,9 +199,10 @@ header nav {
 }
 header nav #hamburger-button {
   display: none;
+  margin: 0 0 0 20px;
 }
 header nav .logotype {
-  margin-right: auto;
+  margin: 0 20px 0 0;
 }
 header nav .nav-links {
   display: flex;
@@ -408,9 +409,15 @@ footer {
   header nav {
     background: #2B2942;
     justify-content: space-between;
+    height: 6vh;
   }
   header nav .nav-links {
     display: none;
+    transition: all 1000ms ease;
+  }
+  header nav .nav-links li a {
+    font-size: 30px;
+    font-weight: 600;
   }
   header nav #hamburger-button {
     display: flex;
@@ -420,6 +427,7 @@ footer {
     background: none;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   header nav .logotype {
     padding: 0 20px 0 0;
