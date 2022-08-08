@@ -176,27 +176,35 @@ h2 {
 // Tablet Typography
 
 // Mobile Typography
-.logotype {
-  font-size: 24px;
+@media screen and (max-width: 640px) {
+  .logotype {
+    font-size: 24px;
+  }
+  
+  .mobile-header {
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+  }
+  
+  .cta {
+    font-size: 14px;
+  }
+  
+  /* About Page */
+  .about-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 4%;
+  }
+  
+  .about-text span {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 4%;
+  }
+  
 }
-
-.mobile-header {
-  font-family: $secondary-font;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 100%;
-}
-
-/* About Page */
-.about-text {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 4%;
-}
-
-.about-text span {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 4%;}
