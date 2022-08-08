@@ -12,13 +12,26 @@
 <body>
     <div class="container">
         <header>
-            <nav>
-                <h4 class="logotype">EB</h4>
-                <ul>
-                    <li><a href="./">Home</a></li>
+            <nav role="navigation">
+                <button id="hamburger-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-menu" width="44" height="44"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                </button>
+                
+                <span>
+                    <h4 class="logotype">EB</h4>
+                </span>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="./" class="underline-text">Home</a></li>
                     <li><a href="/about.html">About</a></li>
-                    <li><a href="/projects.html" class="underline-text">Projects</a></li>
-                    <li><a href="/contact.html" class="cta">Contact</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li id="desktop-contact-button"><a href="/contact.html" class="cta">Contact</a></li>
                 </ul>
             </nav>
         </header>
