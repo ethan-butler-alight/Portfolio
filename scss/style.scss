@@ -37,6 +37,7 @@ body {
 
 header {
     padding: 50px 88px 100px 88px;
+    height: auto;
 
     nav {
         display: flex;
@@ -78,6 +79,7 @@ header {
 
 main {
     width: 100%;
+    height: auto;
     padding: 0 6.67vw;
 }
 
@@ -148,8 +150,7 @@ footer {
 
 /* About Page */
 .about {
-    display: grid;
-    grid-template-columns: repeat(1, 2fr 1fr);
+    display: flex;
 }
 
 
@@ -251,7 +252,7 @@ footer {
     height: 75px;
 }
 
-#mobile-tablet-contact-button {
+#mobile-contact-button {
     align-self: center;
 }
 
