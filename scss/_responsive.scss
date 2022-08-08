@@ -22,11 +22,12 @@
 // Medium Screen
 @media screen and (min-width: 641px) and (max-width: 1007px) {
     header {
+        padding: 50px 40px 100px 40px;
         nav {
             justify-content: space-around;
 
             .nav-links {
-                justify-content: space-around;
+                width: fill;
             }
 
 
@@ -43,6 +44,10 @@
     }
 
     #mobile-contact-button {
+        display: none;
+    }
+
+    .logotype {
         display: none;
     }
 

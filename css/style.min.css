@@ -421,11 +421,16 @@ footer {
   }
 }
 @media screen and (min-width: 641px) and (max-width: 1007px) {
+  header {
+    padding: 50px 40px 100px 40px;
+  }
   header nav {
     justify-content: space-around;
   }
   header nav .nav-links {
-    justify-content: space-around;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill;
   }
   .about {
     max-height: 70%;
@@ -434,6 +439,9 @@ footer {
     line-height: 160%;
   }
   #mobile-contact-button {
+    display: none;
+  }
+  .logotype {
     display: none;
   }
 }
