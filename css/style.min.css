@@ -22,12 +22,6 @@ nav a {
   font-weight: 600;
   font-size: 24px;
 }
-nav .cta {
-  font-size: 24px;
-  font-weight: 600;
-  font-family: Montserrat, sans-serif;
-  color: #003;
-}
 
 /* Header Text */
 h1 {
@@ -130,6 +124,13 @@ h2 {
   background-color: #F63;
 }
 
+.cta {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  color: #003;
+}
+
 /* Contact Page*/
 .contact-type {
   font-weight: 700;
@@ -212,16 +213,6 @@ header nav .nav-links {
 header nav .nav-links li {
   display: flex;
   align-items: center;
-}
-header nav .nav-links .cta {
-  background-color: #F63;
-  border-radius: 16px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 75px;
 }
 
 main {
@@ -368,6 +359,21 @@ footer {
   font-size: 18px;
 }
 
+.cta {
+  background-color: #F63;
+  border-radius: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 75px;
+}
+
+#mobile-tablet-contact-button {
+  align-self: center;
+}
+
 .button {
   display: flex;
   justify-content: space-between;
@@ -402,6 +408,28 @@ footer {
   justify-self: left;
 }
 
+@media screen and (min-width: 1008px) {
+  header nav {
+    justify-content: space-between;
+  }
+  header nav .nav-links {
+    justify-content: space-between;
+  }
+  #mobile-tablet-contact-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  header nav {
+    justify-content: space-around;
+  }
+  header nav .nav-links {
+    justify-content: space-around;
+  }
+  #desktop-contact-button {
+    display: none;
+  }
+}
 @media screen and (max-width: 640px) {
   header {
     padding: 0;
@@ -433,7 +461,9 @@ footer {
     padding: 0 20px 0 0;
     font-size: 24px;
   }
-
+  #desktop-contact-button {
+    display: none;
+  }
   .social-icons {
     -moz-column-gap: 50px;
          column-gap: 50px;
@@ -441,7 +471,6 @@ footer {
   .social-icons a svg {
     transform: scale(0.75);
   }
-
   footer {
     display: none;
   }

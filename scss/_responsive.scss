@@ -1,12 +1,42 @@
 // Large Screen
 @media screen and (min-width: 1008px) {
 
+    header {
+        nav {
+            justify-content: space-between;
+            
+
+            .nav-links {
+                justify-content: space-between;
+            }
+        }
+    }
+
+    #mobile-tablet-contact-button {
+        display: none;
+    }
 }
 
 
 
 // Medium Screen
 @media screen and (min-width: 641px) and (max-width: 1007px) {
+    header {
+        nav {
+            justify-content: space-around;
+
+            .nav-links {
+                justify-content: space-around;
+            }
+
+
+
+        }
+    }
+
+    #desktop-contact-button {
+        display: none;
+    }
 
 }
 
@@ -54,6 +84,10 @@
         
         }
     
+    }
+
+    #desktop-contact-button {
+        display: none;
     }
 
     .social-icons {
