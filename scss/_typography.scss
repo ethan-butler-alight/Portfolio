@@ -1,6 +1,5 @@
-@import 'colors';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,700&family=Urbanist:wght@400;500;600;700&display=swap');
-
+@import "colors";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,700&family=Urbanist:wght@400;500;600;700&display=swap");
 
 $primary-font: Urbanist, sans-serif;
 $secondary-font: Montserrat, sans-serif;
@@ -9,182 +8,181 @@ $secondary-font: Montserrat, sans-serif;
 
 /* Body Text */
 * {
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    letter-spacing: 0.04em;
-    color: #fff;
-    text-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Nav Text */
 
 nav {
+  font-family: $secondary-font;
 
-    font-family: $secondary-font;
+  .logotype {
+    font-style: italic;
+    font-weight: 700;
+  }
 
-    .logotype {
-        font-style: italic;
-        font-weight: 700;
-    }
-
-
-
-    a {
-        font-weight: 600;
-        font-size: 24px;
-    }
+  a {
+    font-weight: 600;
+    font-size: 24px;
+  }
 }
 
 /* Header Text */
 h1 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
 }
 
 h2 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
 }
 
 /* Footer Text */
-.footer-left div{
-    color: $dark-blue;
-    font-weight: 600;
-    font-family: $secondary-font;
+.footer-left div {
+  color: $dark-blue;
+  font-weight: 600;
+  font-family: $secondary-font;
 }
 
 .footer-description {
-    font-size: 24px;
+  font-size: 24px;
 }
 .footer-copyright {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .footer-right div a {
-    color: $dark-blue;
-    font-weight: 600;
-    font-size: 20px;
-    font-family: $secondary-font;
-
+  color: $dark-blue;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: $secondary-font;
 }
 
 /* Text Properties */
 .primary-color {
-    color: $primary-color;
+  color: $primary-color;
 }
 .secondary-color {
-    color: $secondary-color;
+  color: $secondary-color;
 }
 .tertiary-color {
-    color: $tertiary-color;
+  color: $tertiary-color;
 }
 
 .text-shadow {
-    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .bold-text {
- font-weight: bold;   
+  font-weight: bold;
 }
 
 .underline-text {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* About Page */
 .about-text {
-    line-height: 150%;
+  line-height: 150%;
 }
-
 
 /* Projects Page*/
 /* Cards */
 .card-text {
-    font-weight: 600;
+  font-weight: 600;
 
-    p {
-        font-weight: 400;
-        color: #000;
-    }
+  p {
+    font-weight: 400;
+    color: #000;
+  }
 }
 
-
 .card-title {
-    font-weight: 600;
-    color: #000;
+  font-weight: 600;
+  color: #000;
 }
 
 .card-type {
-    font-weight: 600;
-    color: $primary-color;
-
+  font-weight: 600;
+  color: $primary-color;
 }
 
 .button {
-    span {
-        font-weight: 600;
-    }
+  span {
+    font-weight: 600;
+  }
 }
 
 .code-button {
-    background-color: $tertiary-color;
-
+  background-color: $tertiary-color;
 }
 
 .demo-button {
-    background-color: $secondary-color;
-
+  background-color: $secondary-color;
 }
 
 .cta {
-    font-size: 24px;
-    font-weight: 600;
-    font-family: $secondary-font;
-    color: $tertiary-color;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: $secondary-font;
+  color: $tertiary-color;
 }
 
 /* Contact Page*/
 
 .contact-type {
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: 0.04em;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.04em;
 }
 
 .contact-info {
-    font-weight: 400;
-    line-height: 150%;
-
+  font-weight: 400;
+  line-height: 150%;
 }
 
 /* Blog Page */
 /* Check why selecting with .blog-title works but .blog-header doesn't */
 
-.blog-title, .blog-date, .blog-category {
-    font-weight: 600;
-    font-size: 32px;
+.blog-title,
+.blog-date,
+.blog-category {
+  font-weight: 600;
+  font-size: 32px;
 }
 
 .blog-date {
-    color: $secondary-color;
+  color: $secondary-color;
 }
 
 .blog-description {
-    font-weight: 500;
-    font-size: 24px;
+  font-weight: 500;
+  font-size: 24px;
 }
 
-
-
-// Table Typography
+// Tablet Typography
 
 // Mobile Typography
+.logotype {
+  font-size: 24px;
+}
+
+.mobile-header {
+  font-family: $secondary-font;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+}

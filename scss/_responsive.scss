@@ -1,126 +1,112 @@
 // Large Screen
 @media screen and (min-width: 1008px) {
+  header {
+    nav {
+      justify-content: space-between;
 
-    header {
-        nav {
-            justify-content: space-between;
-            
-
-            .nav-links {
-                justify-content: space-between;
-            }
-        }
+      .nav-links {
+        justify-content: space-between;
+      }
     }
+  }
 
-    #mobile-contact-button {
-        display: none;
-    }
+  #mobile-contact-button {
+    display: none;
+  }
+
+  .mobile-header {
+    display: none;
+  }
 }
-
-
 
 // Medium Screen
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    header {
-        padding: 50px 40px 100px 40px;
-        nav {
-            justify-content: space-around;
+  header {
+    padding: 50px 40px 100px 40px;
+    nav {
+      justify-content: space-around;
 
-            .nav-links {
-                width: fill;
-            }
-
-
-
-        }
+      .nav-links {
+        width: stretch;
+      }
     }
+  }
 
-    .about {
-        max-height: 70%;
-    }
+  .about {
+    max-height: 70%;
+  }
 
-    .about-text {
-        line-height: 160%;
-    }
+  .about-text {
+    line-height: 160%;
+  }
 
-    #mobile-contact-button {
-        display: none;
-    }
+  #mobile-contact-button {
+    display: none;
+  }
 
-    .logotype {
-        display: none;
-    }
-
+  .logotype-header-wrapper {
+    display: none;
+  }
 }
 
 // Small Screen
 @media screen and (max-width: 640px) {
+  header {
+    padding: 0;
 
-    header {
-        padding: 0;
+    nav {
+      background: $dark-blue;
+      justify-content: space-between;
+      height: 6vh;
 
-
-        nav {
-            background: $dark-blue;
-            justify-content: space-between;
-            height: 6vh;
-
-            .nav-links {
-                display: none;
-                transition: all 1000ms ease; // Doesn't work
-
-                li a {
-                    font-size: 30px;
-                    font-weight: 600;
-                }
-
-            }
-            
-            
-            #hamburger-button {
-                display: flex;
-                width: 44px;
-                height: 44px;
-                border: none;
-                background: none;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-            }
-
-    
-            .logotype {
-                padding: 0 20px 0 0;
-                font-size: 24px;
-            }
-            
-        
-        }
-    
-    }
-
-
-
-
-    .social-icons {
-
-        column-gap: 50px;
-    
-        a svg{
-            transform: scale(0.75);
-        }
-    }
-
-
-
-
-    footer {
+      .nav-links {
         display: none;
-    }
+        transition: all 1000ms ease; // Doesn't work
 
-    
-    .about {
-        max-height: 80%;
-    }
+        li a {
+          font-size: 30px;
+          font-weight: 600;
+        }
+      }
 
+      #hamburger-button {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border: none;
+        background: none;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .logotype {
+        padding: 0 20px 0 0;
+      }
+
+      .mobile-header {
+        padding: 0 20px 0 0;
+      }
+    }
+  }
+
+  .social-icons {
+    column-gap: 50px;
+
+    a svg {
+      transform: scale(0.75);
+    }
+  }
+
+  .inactive {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .about {
+    max-height: 80%;
+  }
 }

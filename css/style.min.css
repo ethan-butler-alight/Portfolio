@@ -42,7 +42,7 @@ h2 {
 
 /* Footer Text */
 .footer-left div {
-  color: #2B2942;
+  color: #2b2942;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
 }
@@ -56,7 +56,7 @@ h2 {
 }
 
 .footer-right div a {
-  color: #2B2942;
+  color: #2b2942;
   font-weight: 600;
   font-size: 20px;
   font-family: Montserrat, sans-serif;
@@ -64,11 +64,11 @@ h2 {
 
 /* Text Properties */
 .primary-color {
-  color: #5236FF;
+  color: #5236ff;
 }
 
 .secondary-color {
-  color: #F63;
+  color: #f63;
 }
 
 .tertiary-color {
@@ -109,7 +109,7 @@ h2 {
 
 .card-type {
   font-weight: 600;
-  color: #5236FF;
+  color: #5236ff;
 }
 
 .button span {
@@ -121,7 +121,7 @@ h2 {
 }
 
 .demo-button {
-  background-color: #F63;
+  background-color: #f63;
 }
 
 .cta {
@@ -145,18 +145,31 @@ h2 {
 
 /* Blog Page */
 /* Check why selecting with .blog-title works but .blog-header doesn't */
-.blog-title, .blog-date, .blog-category {
+.blog-title,
+.blog-date,
+.blog-category {
   font-weight: 600;
   font-size: 32px;
 }
 
 .blog-date {
-  color: #F63;
+  color: #f63;
 }
 
 .blog-description {
   font-weight: 500;
   font-size: 24px;
+}
+
+.logotype {
+  font-size: 24px;
+}
+
+.mobile-header {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
 }
 
 /* Global Styles */
@@ -180,7 +193,7 @@ a {
 
 body {
   min-height: 100vh;
-  background-color: #5236FF;
+  background-color: #5236ff;
   background-image: url("/images/background.svg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -222,7 +235,10 @@ main {
   padding: 0 6.67vw;
 }
 
-.home, .projects, .about, .contact {
+.home,
+.projects,
+.about,
+.contact {
   /* Center everything in main vertically */
   position: absolute;
   top: 50%;
@@ -238,7 +254,7 @@ footer {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background: #D6D8E5;
+  background: #d6d8e5;
   padding: 0 100px 0;
 }
 
@@ -254,7 +270,8 @@ footer {
        column-gap: 63px;
 }
 
-.footer-sitemap, .footer-socials {
+.footer-sitemap,
+.footer-socials {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -346,22 +363,22 @@ footer {
   display: flex;
   /* why does this work */
   /* but not 
-  font-size: 18px;
+    font-size: 18px;
 
-  or 
+    or 
 
-  (not nested inside .card-buttons like i have above)
-  .card {
-      font-size: 18px;
-  }
-  */
+    (not nested inside .card-buttons like i have above)
+    .card {
+        font-size: 18px;
+    }
+    */
 }
 .card-buttons span {
   font-size: 18px;
 }
 
 .cta {
-  background-color: #F63;
+  background-color: #f63;
   border-radius: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   display: flex;
@@ -405,7 +422,8 @@ footer {
   grid-template-rows: repeat(1, auto);
 }
 
-.contact-type, .contact-info {
+.contact-type,
+.contact-info {
   justify-self: left;
 }
 
@@ -419,6 +437,9 @@ footer {
   #mobile-contact-button {
     display: none;
   }
+  .mobile-header {
+    display: none;
+  }
 }
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   header {
@@ -430,7 +451,7 @@ footer {
   header nav .nav-links {
     width: -webkit-fill-available;
     width: -moz-available;
-    width: fill;
+    width: stretch;
   }
   .about {
     max-height: 70%;
@@ -441,7 +462,7 @@ footer {
   #mobile-contact-button {
     display: none;
   }
-  .logotype {
+  .logotype-header-wrapper {
     display: none;
   }
 }
@@ -450,7 +471,7 @@ footer {
     padding: 0;
   }
   header nav {
-    background: #2B2942;
+    background: #2b2942;
     justify-content: space-between;
     height: 6vh;
   }
@@ -474,7 +495,9 @@ footer {
   }
   header nav .logotype {
     padding: 0 20px 0 0;
-    font-size: 24px;
+  }
+  header nav .mobile-header {
+    padding: 0 20px 0 0;
   }
   .social-icons {
     -moz-column-gap: 50px;
@@ -482,6 +505,9 @@ footer {
   }
   .social-icons a svg {
     transform: scale(0.75);
+  }
+  .inactive {
+    display: none;
   }
   footer {
     display: none;
