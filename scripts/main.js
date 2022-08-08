@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const hamburgerButton = document.getElementById('hamburger-button');
-    const contactButton = document.getElementById('contact-button')
+    const contactButton = document.getElementById('mobile-contact-button')
 
     hamburgerButton.addEventListener('click', hamburgerMenu);
     
@@ -20,21 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
             navlinks.style.justifyContent = 'start';
             navlinks.style.rowGap = '24px';
             navlinks.style.padding = '31px 0 0 31px';
-
-
-
-
-            // Remove CTA styling when using the mobile nav
-            contactButton.classList.remove('cta')
-
         }
 
 
         // If the nav is open
         else {
-            // Add CTA styling back for desktop
-            contactButton.classList.add('cta')
-
             navlinks.style.display = 'none';
         }
     }
