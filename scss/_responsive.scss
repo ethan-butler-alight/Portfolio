@@ -51,9 +51,10 @@
 
 // Small Screen
 @media screen and (max-width: 640px) {
+
   header {
     padding: 0;
-
+    
     nav {
       background: $dark-blue;
       justify-content: space-between;
@@ -90,7 +91,7 @@
     }
   }
 
-  .cta {
+  #mobile-contact-button {
     width: 120px;
     height: 45px;
   }
