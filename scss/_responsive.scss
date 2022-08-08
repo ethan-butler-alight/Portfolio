@@ -12,7 +12,7 @@
         }
     }
 
-    #mobile-tablet-contact-button {
+    #mobile-contact-button {
         display: none;
     }
 }
@@ -34,7 +34,15 @@
         }
     }
 
-    #desktop-contact-button {
+    .about {
+        max-height: 70%;
+    }
+
+    .about-text {
+        line-height: 160%;
+    }
+
+    #mobile-contact-button {
         display: none;
     }
 
@@ -86,7 +94,8 @@
     
     }
 
-    #desktop-contact-button {
+    
+    #default-contact-button {
         display: none;
     }
 
@@ -104,6 +113,11 @@
 
     footer {
         display: none;
+    }
+
+    
+    .about {
+        max-height: 80%;
     }
 
 }
