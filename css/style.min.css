@@ -476,9 +476,6 @@ footer {
     padding: 0 20px 0 0;
     font-size: 24px;
   }
-  #default-contact-button {
-    display: none;
-  }
   .social-icons {
     -moz-column-gap: 50px;
          column-gap: 50px;
