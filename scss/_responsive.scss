@@ -90,6 +90,11 @@
     }
   }
 
+  .cta {
+    width: 120px;
+    height: 45px;
+  }
+
   .social-icons {
     column-gap: 50px;
 
@@ -106,7 +111,12 @@
     display: none;
   }
 
+  // About Page
+
   .about {
-    max-height: 80%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vw;
   }
 }
