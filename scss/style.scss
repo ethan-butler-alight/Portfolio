@@ -32,7 +32,6 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  display: flex;
 }
 
 header {
@@ -140,9 +139,6 @@ footer {
 }
 
 /* About Page */
-.about {
-  display: flex;
-}
 
 /* Cards */
 .cards-container {
