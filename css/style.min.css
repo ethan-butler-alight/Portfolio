@@ -254,16 +254,6 @@ main {
   padding: 0 6.67vw;
 }
 
-.home,
-.projects,
-.about,
-.contact {
-  /* Center everything in main vertically */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 footer {
   display: flex;
   position: absolute;
@@ -322,14 +312,18 @@ footer {
 }
 
 /* About Page */
+/* Project Page */
 /* Cards */
 .cards-container {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
   justify-items: center;
   align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 40px;
 }
 
 .card {
@@ -543,5 +537,8 @@ footer {
     width: 100vw;
     height: 100%;
     padding: 40px 6.67vw;
+  }
+  .projects {
+    margin: 50px 0;
   }
 }/*# sourceMappingURL=style.min.css.map */
