@@ -72,6 +72,14 @@ main {
   padding: 0 6.67vw;
 }
 
+.home,
+.about {
+  /* Center everything in main vertically */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 footer {
   display: flex;
@@ -239,20 +247,25 @@ footer {
 /* Contact Page */
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(507px, 1fr));
+  column-gap: 50px;
+  row-gap: 50px;
   justify-items: center;
   align-items: center;
+  padding: 20px;
+  width: fit-content;
 }
 
-.contact-text {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr 2fr);
-  grid-template-rows: repeat(1, auto);
-}
-
-.contact-type,
 .contact-info {
-  justify-self: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, repeat(1fr));
+  row-gap: 10px;
+}
+
+
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @import "responsive";

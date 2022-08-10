@@ -187,6 +187,7 @@ h2 {
     line-height: 160%;
     letter-spacing: 0.04em;
   }
+  /* Contact Page */
 }
 /* Global Styles */
 * {
@@ -252,6 +253,14 @@ main {
   width: 100%;
   height: auto;
   padding: 0 6.67vw;
+}
+
+.home,
+.about {
+  /* Center everything in main vertically */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 footer {
@@ -420,20 +429,27 @@ footer {
 /* Contact Page */
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(507px, 1fr));
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 50px;
   justify-items: center;
   align-items: center;
+  padding: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.contact-text {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr 2fr);
-  grid-template-rows: repeat(1, auto);
-}
-
-.contact-type,
 .contact-info {
-  justify-self: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, repeat(1fr));
+  row-gap: 10px;
+}
+
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media screen and (min-width: 1008px) {
