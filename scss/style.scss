@@ -245,6 +245,12 @@ footer {
 }
 
 /* Contact Page */
+// Remove redundant styles from here that are in main when finished
+.contact {
+
+}
+
+
 .contact-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(507px, 1fr));
@@ -253,7 +259,7 @@ footer {
   justify-items: center;
   align-items: center;
   padding: 20px;
-  width: fit-content;
+  width: 100%;
 }
 
 .contact-info {
