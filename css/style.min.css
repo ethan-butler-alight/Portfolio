@@ -519,6 +519,8 @@ footer {
   #mobile-contact-button {
     width: 151px;
     height: 57px;
+    min-width: 151px;
+    min-height: 57px;
   }
   .social-icons {
     -moz-column-gap: 50px;
