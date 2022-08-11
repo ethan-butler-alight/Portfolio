@@ -226,13 +226,11 @@ a {
 body {
   height: 100%;
   background-color: #5236ff;
-  background-image: url("/images/background.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 
 .container {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -270,17 +268,8 @@ main {
   padding: 0 6.67vw;
 }
 
-.home,
-.about {
-  /* Center everything in main vertically */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 footer {
   display: flex;
-  position: absolute;
   top: 100%;
   left: 0%;
   height: 200px;
