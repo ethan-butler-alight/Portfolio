@@ -432,16 +432,12 @@ footer {
 
 /* Contact Page */
 .contact {
-  width: 80%;
   height: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(500px), 1fr);
   display: grid;
+  row-gap: 50px;
+  padding-top: 0px;
   justify-items: center;
-  align-self: center;
-}
-
-.contact-container {
-  display: grid;
+  justify-self: center;
 }
 
 .contact-info {
@@ -455,15 +451,13 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-self: flex-end;
 }
 
 .icon {
   height: 100%;
   width: auto;
-}
-
-.contact-section svg {
-  justify-self: right;
 }
 
 .contact-svg {
