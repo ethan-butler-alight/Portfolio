@@ -208,6 +208,21 @@ h2 {
   }
 
   /* Contact Page */
+  .contact {
+    font-size: 24px; // Why doesn't this work
+  }
+
+  .contact-type {
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+  }
   
-  
+  .contact-info a{
+    font-weight: 500;
+    line-height: 100%;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+  }
 }

@@ -188,6 +188,21 @@ h2 {
     letter-spacing: 0.04em;
   }
   /* Contact Page */
+  .contact {
+    font-size: 24px;
+  }
+  .contact-type {
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+  }
+  .contact-info a {
+    font-weight: 500;
+    line-height: 100%;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+  }
 }
 /* Global Styles */
 * {
@@ -427,6 +442,10 @@ footer {
 }
 
 /* Contact Page */
+.contact {
+  width: 100%;
+}
+
 .contact-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(507px, 1fr));
@@ -440,14 +459,30 @@ footer {
 }
 
 .contact-info {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, repeat(1fr));
-  row-gap: 10px;
+  grid-template-columns: repeat(auto-fit, repeat(1fr, 1fr));
+  row-gap: 30px;
 }
 
 .contact-section {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.icon {
+  height: 100%;
+  width: auto;
+}
+
+.contact-section svg {
+  justify-self: right;
+}
+
+.contact-svg {
+  height: auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 1008px) {
