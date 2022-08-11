@@ -247,7 +247,7 @@ footer {
 /* Contact Page */
 // Remove redundant styles from here that are in main when finished
 .contact {
-
+  width: 100%;
 }
 
 
@@ -263,15 +263,31 @@ footer {
 }
 
 .contact-info {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, repeat(1fr));
-  row-gap: 10px;
+  grid-template-columns: repeat(auto-fit, repeat(1fr, 1fr));
+  row-gap: 30px;
 }
 
 
 .contact-section {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.icon {
+  height: 100%;
+  width: auto;
+}
+
+.contact-section svg {
+  justify-self: right;
+}
+
+.contact-svg {
+  height: auto;
+  width: 100%;
 }
 
 @import "responsive";
