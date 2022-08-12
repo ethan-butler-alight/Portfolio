@@ -437,7 +437,6 @@ footer {
   row-gap: 50px;
   padding-top: 0px;
   justify-items: center;
-  justify-self: center;
 }
 
 .contact-info {
@@ -452,6 +451,17 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+}
+
+.contact-text {
+  justify-self: start;
+}
+
+.contact-section a {
+  justify-self: end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .icon {
