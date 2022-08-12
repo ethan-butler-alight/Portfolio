@@ -243,7 +243,6 @@ footer {
   row-gap: 50px;
   padding-top: 0px;
   justify-items: center;
-  justify-self: center;
 }
 
 .contact-info {
@@ -261,12 +260,18 @@ footer {
   justify-items: center;
 }
 
+.contact-text {
+  justify-self: start;
+}
+
+.contact-section a {
+  justify-self: end;
+  width: fit-content;
+}
+
 .icon {
   height: 100%;
   width: auto;
-}
-
-.contact-section svg {
 }
 
 .contact-svg {
