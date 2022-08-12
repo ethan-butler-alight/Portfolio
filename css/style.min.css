@@ -431,12 +431,13 @@ footer {
 
 /* Contact Page */
 .contact {
-  min-height: 100vh;
   height: 100%;
-  display: grid;
-  row-gap: 50px;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  row-gap: 80px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-section {
@@ -457,7 +458,7 @@ footer {
 
 .icon {
   height: 100%;
-  width: auto;
+  width: 64px;
 }
 
 .contact-svg {
