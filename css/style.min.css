@@ -265,7 +265,8 @@ header nav .nav-links li {
 
 main {
   width: 100%;
-  height: auto;
+  min-height: auto;
+  height: 100%;
   padding: 0 6.67vw;
   display: flex;
   justify-content: center;
@@ -273,6 +274,7 @@ main {
 }
 
 footer {
+  position: relative;
   display: flex;
   height: 200px;
   width: 100%;
@@ -331,6 +333,7 @@ footer {
 .cards-container {
   width: 100%;
   height: 100%;
+  min-height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
   justify-items: center;
@@ -495,9 +498,6 @@ footer {
     width: -moz-available;
     width: stretch;
   }
-  .about {
-    max-height: 70%;
-  }
   .about-text {
     line-height: 160%;
   }
@@ -570,8 +570,5 @@ footer {
     width: 100vw;
     height: 100%;
     padding: 40px 6.67vw;
-  }
-  .projects {
-    margin: 50px 0;
   }
 }/*# sourceMappingURL=style.min.css.map */
