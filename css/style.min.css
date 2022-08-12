@@ -435,22 +435,14 @@ footer {
   height: 100%;
   display: grid;
   row-gap: 50px;
-  padding-top: 0px;
   justify-items: center;
-}
-
-.contact-info {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, repeat(1fr, 1fr));
-  row-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .contact-section {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
 }
 
 .contact-text {
@@ -458,10 +450,9 @@ footer {
 }
 
 .contact-section a {
-  justify-self: end;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
+  display: grid;
+  justify-items: end;
 }
 
 .icon {
