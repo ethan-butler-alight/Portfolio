@@ -22,7 +22,6 @@
 // Medium Screen
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   header {
-    padding: 50px 40px 100px 40px;
     nav {
       justify-content: space-around;
 
@@ -115,6 +114,16 @@
     display: none;
   }
 
+  // Home Page
+.index-container {
+  grid-template-rows: auto 1fr;
+}
+
+.home {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
   // About Page
 
   .about {
