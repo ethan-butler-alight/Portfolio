@@ -23,10 +23,8 @@
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   header {
     nav {
-      justify-content: space-around;
-
       .nav-links {
-        width: stretch;
+        width: 100%;
       }
     }
   }
