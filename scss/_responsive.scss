@@ -146,5 +146,24 @@
   }
 
   // Contact Page
+  
+  .contact-container {
+  }
 
+  .contact {
+    padding: 20px 6.67vw;
+    align-content: flex-start;
+  }
+  .contact-wrapper {
+    padding: 0 0 30px 0;
+  }
+
+  .contact-section {
+    align-items: center;
+  }
+
+  .contact-svg {
+    max-width: 500px;
+    min-width: 100%;
+  }
 }
