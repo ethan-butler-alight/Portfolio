@@ -31,8 +31,6 @@
     }
   }
 
-
-
   .about-text {
     line-height: 160%;
   }
@@ -48,11 +46,10 @@
 
 // Small Screen
 @media screen and (max-width: 640px) {
-
   header {
     width: 100%;
     padding: 0;
-    
+
     nav {
       width: 100%;
       background: $dark-blue;
@@ -91,7 +88,6 @@
   }
 
   #mobile-contact-button {
-
     width: 151px;
     height: 57px;
     min-width: 151px;
@@ -115,15 +111,15 @@
   }
 
   // Home Page
-.index-container {
-  grid-template-rows: auto 1fr;
-}
+  .index-container {
+    grid-template-rows: auto 1fr;
+  }
 
-.home {
-  display: grid;
-  justify-items: center;
-  align-content: center;
-}
+  .home {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+  }
   // About Page
 
   .about {
@@ -138,7 +134,7 @@
 
   .cta {
     margin-bottom: 40px;
-  }  
+  }
 
   // Projects Page
   .projects {
@@ -146,10 +142,6 @@
   }
 
   // Contact Page
-  
-  .contact-container {
-  }
-
   .contact {
     padding: 20px 6.67vw;
     align-content: flex-start;

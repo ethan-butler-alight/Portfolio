@@ -98,6 +98,18 @@ footer {
   row-gap: 30px;
 }
 
+.icon {
+  height: 100%;
+  width: 48px;
+}
+
+.icon-36px {
+  width: 36px;
+  height: 100%;
+}
+
+
+
 /* Home Page */
 .index-container {
   display: grid;
@@ -290,11 +302,6 @@ footer {
   width: 100%;
   display: grid;
   justify-items: end;
-}
-
-.icon {
-  height: 100%;
-  width: 64px;
 }
 
 
