@@ -19,6 +19,13 @@
   }
 }
 
+// Medium to Moderately Large Screens
+@media screen and (min-width: 641px) and (max-width: 1089px) {
+  .projects-container {
+    display: block;
+  }
+}
+
 // Medium Screen
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   header {
@@ -35,6 +42,10 @@
 
   #mobile-contact-button {
     display: none;
+  }
+
+  .projects-container {
+    display: block;
   }
 
   .logotype-header-wrapper {
