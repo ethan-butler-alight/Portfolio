@@ -96,6 +96,10 @@
     }
   }
 
+  main {
+    grid-row: auto;
+  }
+
   #mobile-contact-button {
     width: 151px;
     height: 57px;
@@ -129,8 +133,8 @@
     justify-items: center;
     align-content: center;
   }
-  // About Page
 
+  // About Page
   .about {
     position: relative;
     display: flex;
@@ -145,16 +149,7 @@
     margin-bottom: 40px;
   }
 
-  // Projects Page
-  .projects {
-    // margin: 50px 0;
-  }
-
   // Contact Page
-
-  .contact-container {
-  }
-
   .contact {
     padding: 20px 6.67vw;
     align-content: flex-start;
