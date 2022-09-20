@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Display" + navlinks.style.display);
     if (navlinks.style.display != "flex") {
       // Open the nav and set it's properties
+
       navlinks.style.display = "flex";
       navlinks.style.flexDirection = "column";
       navlinks.style.position = "absolute";

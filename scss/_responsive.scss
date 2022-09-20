@@ -20,6 +20,13 @@
   }
 }
 
+// Medium to Moderately Large Screens
+@media screen and (min-width: 641px) and (max-width: 1089px) {
+  .projects-container {
+    display: block;
+  }
+}
+
 // Medium Screen
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   header {
@@ -38,6 +45,10 @@
 
   #mobile-contact-button {
     display: none;
+  }
+
+  .projects-container {
+    display: block;
   }
 
   .logotype-header-wrapper {
@@ -91,6 +102,11 @@
     }
   }
 
+  main {
+    grid-row: auto;
+    padding: 1vh 6.67vw;
+  }
+
   #mobile-contact-button {
     width: 151px;
     height: 57px;
@@ -124,8 +140,8 @@
     justify-items: center;
     align-content: center;
   }
-  // About Page
 
+  // About Page
   .about {
     position: relative;
     display: flex;
@@ -145,13 +161,34 @@
     // margin: 50px 0;
   }
 
+  .card {
+    padding-top: 35px;
+  }
+
   // Contact Page
+  .contact {
+    height: 100%;
+  }
 
   .contact-section {
     padding: 2vh 5vw;
+    align-self: center;
+    height: 100%;
+  }
+
+  .email {
+    padding-bottom: 10px;
+  }
+  .linkedin {
+    padding: 10px 0;
+  }
+  .github {
+    padding-top: 10px;
   }
 
   .contact-svg {
+    max-width: 500px;
     min-width: 200px;
+    align-self: flex-start;
   }
 }
