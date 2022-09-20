@@ -514,6 +514,7 @@ footer {
   }
   header nav .nav-links {
     justify-content: space-between;
+    width: 60vw;
   }
   #mobile-contact-button {
     display: none;
