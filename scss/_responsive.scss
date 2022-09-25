@@ -31,7 +31,7 @@
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   header {
     nav {
-      justify-content: space-around;
+      justify-content: space-between;
 
       .nav-links {
         width: stretch;
@@ -55,21 +55,27 @@
     display: none;
   }
 }
+
+// ?????
 .contact-svg {
   min-width: 500px;
 }
 
 // Small Screen
 @media screen and (max-width: 640px) {
-  header {
-    width: 100%;
+  .container {
     padding: 0;
+  }
+  header {
+    max-width: 100%;
+    padding: 0;
+    min-height: 7vh;
+    height: fit-content;
 
     nav {
       width: 100%;
       background: $dark-blue;
       justify-content: space-between;
-      height: 7vh;
 
       .nav-links {
         display: none;
@@ -103,8 +109,10 @@
   }
 
   main {
-    grid-row: auto;
-    padding: 1vh 6.67vw;
+    // Offset the bottom of main to vertically center it
+    // 7vh is the height of the header on mobile
+    margin-bottom: 7vh;
+    margin: 0 6.67vw;
   }
 
   #mobile-contact-button {
@@ -131,48 +139,35 @@
   }
 
   // Home Page
-  .index-container {
-    grid-template-rows: auto 1fr;
-  }
-
   .home {
-    display: grid;
-    justify-items: center;
-    align-content: center;
+    row-gap: 3vh;
   }
 
   // About Page
   .about {
-    position: relative;
     display: flex;
     flex-direction: column;
-    row-gap: 10vw;
-    width: 100vw;
     height: 100%;
-    padding: 10px 6.67vw;
-  }
-
-  .cta {
-    margin-bottom: 40px;
+    width: fit-content;
+    margin: 0 6.67vw;
+    padding-bottom: 7vh;
+    row-gap: 5vh;
   }
 
   // Projects Page
   .projects {
-    // margin: 50px 0;
+    padding: 5vh 0;
+  }
+
+  .cards-container {
+    row-gap: 5vh;
   }
 
   .card {
-    padding-top: 35px;
   }
 
   // Contact Page
   .contact {
-    height: 100%;
-  }
-
-  .contact-section {
-    padding: 2vh 5vw;
-    align-self: center;
     height: 100%;
   }
 
