@@ -22,10 +22,6 @@
 
 // Medium Screen
 @media screen and (min-width: 641px) and (max-width: 1089px) {
-  .projects-container {
-    display: block;
-  }
-
   header {
     nav {
       justify-content: space-between;
@@ -77,6 +73,14 @@
       background: $dark-blue;
       justify-content: space-between;
 
+      .logotype {
+        margin: 0;
+        margin-right: 8px;
+      }
+      h4 {
+        margin-right: 8px;
+      }
+
       .nav-links {
         display: none;
         transition: all 1000ms ease; // Doesn't work
@@ -94,6 +98,7 @@
         border: none;
         background: none;
         cursor: pointer;
+        z-index: 2;
 
         // Left align the button with the edge of the contact wrapper at lower screen widths
         margin-left: 4px;
@@ -158,10 +163,6 @@
   }
 
   // Contact Page
-  .contact {
-    padding-top: 3vh;
-  }
-
   .email {
     padding-bottom: 10px;
   }

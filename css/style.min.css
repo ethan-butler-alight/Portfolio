@@ -442,6 +442,8 @@ footer {
   align-items: center;
   width: 100%;
   padding: 23px 30px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 .code-button {
@@ -511,9 +513,6 @@ footer {
   }
 }
 @media screen and (min-width: 641px) and (max-width: 1089px) {
-  .projects-container {
-    display: block;
-  }
   header nav {
     justify-content: space-between;
   }
@@ -560,6 +559,13 @@ footer {
     background: #2b2942;
     justify-content: space-between;
   }
+  header nav .logotype {
+    margin: 0;
+    margin-right: 8px;
+  }
+  header nav h4 {
+    margin-right: 8px;
+  }
   header nav .nav-links {
     display: none;
     transition: all 1000ms ease;
@@ -575,6 +581,7 @@ footer {
     border: none;
     background: none;
     cursor: pointer;
+    z-index: 2;
     margin-left: 4px;
   }
   main {
@@ -617,9 +624,6 @@ footer {
   }
   .cards-container {
     row-gap: 5vh;
-  }
-  .contact {
-    padding-top: 3vh;
   }
   .email {
     padding-bottom: 10px;
