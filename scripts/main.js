@@ -1,3 +1,5 @@
+"use strict";
+
 // Declare variables
 var hamburgerButton, contactButtton, navlinks;
 var isNavClosed = true;
@@ -5,7 +7,6 @@ var isNavClosed = true;
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize variables
   hamburgerButton = document.getElementById("hamburger-button");
-  contactButton = document.getElementById("mobile-contact-button");
   navlinks = document.getElementsByClassName("nav-links")[0];
 });
 

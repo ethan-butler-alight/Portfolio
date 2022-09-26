@@ -2,7 +2,6 @@
 @import "colors";
 
 /* Global Styles */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -72,6 +71,7 @@ header {
 main {
   max-height: 100%;
   display: flex;
+
   // 175px is to vertically center main by offsetting it up.
   // Offsets the size of the header (75px) and its padding (100px)
   margin-bottom: 175px;
@@ -147,8 +147,6 @@ footer {
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.55));
 }
 
-/* About Page */
-
 /* Project Page */
 /* Cards */
 .cards-container {
@@ -176,15 +174,15 @@ footer {
 }
 
 .card-image {
-  max-width: 100%;
-  max-height: 100%;
+  width: 400px;
   display: block;
+  filter: grayscale(80%);
 }
 
-/* Unsure if spacing is perfect on text in cards. May fix later */
 .card-text {
   background-color: #fff;
   padding: 16px 24px;
+  max-width: 400px;
 
   p {
     font-size: 16px;
@@ -207,21 +205,9 @@ footer {
 .card-buttons {
   display: flex;
 
-  /* why does this work */
   span {
     font-size: 18px;
   }
-
-  /* but not 
-    font-size: 18px;
-
-    or 
-
-    (not nested inside .card-buttons like i have above)
-    .card {
-        font-size: 18px;
-    }
-    */
 }
 
 .cta {
@@ -256,16 +242,16 @@ footer {
 }
 
 /* Contact Page */
-
-// Remove redundant styles from here that are in main when finished
 .contact {
-  display: flex;
   flex-wrap: wrap;
   column-gap: 80px;
+  row-gap: 5vh;
   justify-content: center;
+  height: fit-content;
 }
 
 .contact-wrapper {
+  height: fit-content;
 }
 
 .contact-section {
