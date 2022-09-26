@@ -1,5 +1,5 @@
 // Large Screen
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1089px) {
   header {
     nav {
       justify-content: space-between;
@@ -20,21 +20,21 @@
   }
 }
 
-// Medium to Moderately Large Screens
+// Medium Screen
 @media screen and (min-width: 641px) and (max-width: 1089px) {
   .projects-container {
     display: block;
   }
-}
 
-// Medium Screen
-@media screen and (min-width: 641px) and (max-width: 1007px) {
   header {
     nav {
       justify-content: space-between;
 
       .nav-links {
         width: stretch;
+      }
+      .logotype {
+        display: none;
       }
     }
   }
@@ -51,14 +51,12 @@
     display: block;
   }
 
-  .logotype-header-wrapper {
+  .mobile-header {
     display: none;
   }
-}
-
-// ?????
-.contact-svg {
-  min-width: 500px;
+  .contact-svg {
+    min-width: 500px;
+  }
 }
 
 // Small Screen
@@ -100,18 +98,13 @@
         // Left align the button with the edge of the contact wrapper at lower screen widths
         margin-left: 4px;
       }
-
-      .logotype-header-wrapper {
-        display: flex;
-      }
     }
   }
 
   main {
     // Offset the bottom of main to vertically center it
     // 7vh is the height of the header on mobile
-    margin-bottom: 7vh;
-    margin: 0 6.67vw;
+    margin: 0 6.67vw 7vh;
   }
 
   #mobile-contact-button {
@@ -148,14 +141,13 @@
     flex-direction: column;
     height: 100%;
     width: fit-content;
-    margin: 0 6.67vw;
-    padding-bottom: 7vh;
+    padding-top: 3vh;
     row-gap: 5vh;
   }
 
   // Projects Page
   .projects {
-    padding: 5vh 0;
+    padding-top: 3vh;
   }
 
   .cards-container {
@@ -167,7 +159,7 @@
 
   // Contact Page
   .contact {
-    height: 100%;
+    padding-top: 3vh;
   }
 
   .email {
@@ -181,8 +173,8 @@
   }
 
   .contact-svg {
-    max-width: 500px;
+    max-width: 600px;
     min-width: 200px;
-    align-self: flex-start;
+    width: 100%;
   }
 }
