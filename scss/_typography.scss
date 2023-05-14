@@ -180,18 +180,21 @@ h2 {
   .logotype {
     font-size: 24px;
   }
-  
+  .underline-text {
+    font-size: 24px;
+  }
+
   .mobile-header {
     font-family: $secondary-font;
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
   }
-  
+
   .cta {
     font-size: 22px;
   }
-  
+
   /* About Page */
   .about-text {
     font-weight: 500;
@@ -199,7 +202,7 @@ h2 {
     line-height: 160%;
     letter-spacing: 0.04em;
   }
-  
+
   .about-text span {
     font-weight: 700;
     font-size: 23px;
@@ -218,8 +221,8 @@ h2 {
     font-size: 24px;
     letter-spacing: 0.04em;
   }
-  
-  .contact-info a{
+
+  .contact-info a {
     font-weight: 500;
     line-height: 100%;
     font-size: 20px;
